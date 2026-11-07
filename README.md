@@ -31,6 +31,8 @@ Projede otel yönetimi için gerekli temel tablolar oluşturulacaktır.
 - `Rezervasyon` — Rezervasyon bilgileri ve tarihleri
 - `Konaklama` — Giriş ve çıkış işlemleri
 - `Odeme` — Ödeme kayıtları
+
+
   > Not: İlk aşamada yalnızca `oda`, `musteri` ve `rezervasyon` tabloları oluşturulmuştur, diğerleri ilerleyen aşamalarda eklenecektir.
 
 ### 📐 SQL Dosyaları
