@@ -31,13 +31,63 @@ Projede otel yönetimi için gerekli temel tablolar oluşturulacaktır.
 - `Rezervasyon` — Rezervasyon bilgileri ve tarihleri
 - `Konaklama` — Giriş ve çıkış işlemleri
 - `Odeme` — Ödeme kayıtları
+  > Not: İlk aşamada yalnızca `oda`, `musteri` ve `rezervasyon` tabloları oluşturulmuştur, diğerleri ilerleyen aşamalarda eklenecektir.
 
 ### 📐 SQL Dosyaları
 
-Veritabanı yapısı ve diyagramı `sql/` klasöründe bulunacaktır.
+Veritabanı yapısı ve diyagramı `database/` klasöründe bulunacaktır.
 
 - `schema.sql` — Tablo oluşturma komutları (DDL)
 - `er-diagram.png` — Veritabanı ER diyagramı
+
+---
+
+## 🚀 Kurulum
+
+**Gereksinimler:** Java 21, Maven, MySQL
+
+1. Repoyu klonlayın:
+   ```
+   git clone https://github.com/antipathyy/VeriTabaniProje.git
+   ```
+2. Bilgisayarınızda MySQL'in kurulu ve çalışır durumda olduğundan emin olun.
+3. `src/main/resources/` altında `application-local.properties` adlı bir dosya oluşturun.
+   Bu dosya şifre içerdiği için `.gitignore` içindedir ve repoya gönderilmez:
+   ```properties
+   spring.datasource.url=jdbc:mysql://localhost:3306/otel_db?createDatabaseIfNotExist=true
+   spring.datasource.username=root
+   spring.datasource.password=KENDI_SIFRENIZ
+   ```
+4. IntelliJ IDEA'da projeyi açın, Maven'ı yenileyin ve `OtelApplication` sınıfını çalıştırın.
+
+---
+
+## 📁 Proje Yapısı
+
+```
+VeriTabaniProje/
+├── database/
+│   └── schema.sql
+├── odev1/
+├── src/main/
+│   ├── java/me/otelrezervasyon/
+│   │   └── OtelApplication.java
+│   └── resources/
+│       └── application.properties
+├── pom.xml
+└── README.md
+```
+
+---
+
+## 📌 Proje Durumu
+
+- [x] Proje iskeleti (Spring Boot + Maven)
+- [x] İlk veritabanı şeması
+- [ ] Entity sınıfları
+- [ ] Repository ve Service katmanı
+- [ ] REST API (Controller)
+- [ ] ER diyagramı
 
 ---
 
