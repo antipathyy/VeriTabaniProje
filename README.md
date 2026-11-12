@@ -33,8 +33,6 @@ Projede otel yönetimi için gerekli temel tablolar oluşturulacaktır.
 - `Odeme` — Ödeme kayıtları
 
 
-  > Not: İlk aşamada yalnızca `oda`, `musteri` ve `rezervasyon` tabloları oluşturulmuştur, diğerleri ilerleyen aşamalarda eklenecektir.
-
 ### 📐 SQL Dosyaları
 
 Veritabanı yapısı ve diyagramı `database/` klasöründe bulunacaktır.
@@ -90,6 +88,13 @@ VeriTabaniProje/
 - [ ] Repository ve Service katmanı
 - [ ] REST API (Controller)
 - [ ] ER diyagramı
+
+---
+
+## 🧩 Güncelleme Kayıtları
+
+- **Veritabanı (SQL):** Temel varlıkları kapsayan `oda`, `musteri` ve `rezervasyon` tabloları DDL şemasına eklendi. (12.11.2026)
+- **Backend (Entity):** JPA/Hibernate eşleştirmeleri için `Oda` ve `Musteri` entity sınıfları oluşturuldu. (12.11.2026)
 
 ---
 
