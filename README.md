@@ -102,3 +102,7 @@ VeriTabaniProje/
 
 - **ALİHAN BABAYİĞİT** — 455084
 - **ENES HOŞ** — 455086
+
+git add README.md database/schema.png
+git commit -m "docs: add ER diagram and update schema details in README"
+git push
