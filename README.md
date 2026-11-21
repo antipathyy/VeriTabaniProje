@@ -38,7 +38,9 @@ Projede otel yönetimi için gerekli temel tablolar oluşturulacaktır.
 Veritabanı yapısı ve diyagramı `database/` klasöründe bulunacaktır.
 
 - `schema.sql` — Tablo oluşturma komutları (DDL)
-- `er-diagram.png` — Veritabanı ER diyagramı
+- `schema.png` — Veritabanı ER diyagramı
+
+![Otel Rezervasyon Sistemi ER Diyagramı](database/schema.png)
 
 ---
 
@@ -67,7 +69,8 @@ Veritabanı yapısı ve diyagramı `database/` klasöründe bulunacaktır.
 ```
 VeriTabaniProje/
 ├── database/
-│   └── schema.sql
+│   ├── schema.sql
+│   └── schema.png
 ├── odev1/
 ├── src/main/
 │   ├── java/me/otelrezervasyon/
@@ -87,7 +90,7 @@ VeriTabaniProje/
 - [ ] Entity sınıfları
 - [ ] Repository ve Service katmanı
 - [ ] REST API (Controller)
-- [ ] ER diyagramı
+- [x] ER diyagramı
 
 ---
 
@@ -95,14 +98,10 @@ VeriTabaniProje/
 
 - **Veritabanı (SQL):** Temel varlıkları kapsayan `oda`, `musteri` ve `rezervasyon` tabloları DDL şemasına eklendi. (12.11.2026)
 - **Backend (Entity):** JPA/Hibernate eşleştirmeleri için `Oda` ve `Musteri` entity sınıfları oluşturuldu. (12.11.2026)
-
+- **Dokümantasyon (ER Diyagramı):** 9 tablolu veritabanı mimarisini ve ilişkilerini gösteren `schema.png` diyagramı `database/` dizinine ve `README.md` dosyasına eklendi. (21.11.2026)
 ---
 
 ## 👥 Grup Üyeleri
 
 - **ALİHAN BABAYİĞİT** — 455084
 - **ENES HOŞ** — 455086
-
-git add README.md database/schema.png
-git commit -m "docs: add ER diagram and update schema details in README"
-git push
